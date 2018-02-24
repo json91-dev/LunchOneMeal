@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.lunchonemeal.StartScreen"
+    android:background="@drawable/backgroundimage"
+    >
+    <TextView
+        android:id="@+id/UpperText"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="CREATE YOUR ACCOUNT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dip"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpperText"
+        android:layout_marginTop="30dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textviewborder"
+        android:padding="5dip"
+        android:hint="ID"
+        android:inputType="textVisiblePassword"
+        />
+    <Button
+        android:id="@+id/idcheckbutton"
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/id"
+        android:layout_alignRight="@+id/id"
+        android:text="중복확인"
+        android:textColor="#F361A6"
+        android:background="@drawable/idcheckbutton"
+        />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textviewborder"
+        android:padding="5dip"
+        android:hint="PW(영문자+숫자+특수문자)"
+        android:layout_below="@+id/idcheckbutton"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        />
+
+
+
+    <EditText
+        android:id="@+id/pw2"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw"
+        android:layout_marginTop="20dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textviewborder"
+        android:padding="5dip"
+        android:hint="PW Confirmation"
+        android:inputType="textPassword"
+
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw2"
+        android:layout_marginTop="20dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textviewborder"
+        android:padding="5dip"
+        android:hint="E-MAIL"
+        android:inputType="textVisiblePassword"
+
+        />
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:text="회원가입"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/email"
+
+        />
+
+
+
+</RelativeLayout>

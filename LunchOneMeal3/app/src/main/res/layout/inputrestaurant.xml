@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:padding="10px"
+    >
+
+    <TextView
+        android:layout_margin="8dip"
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add my restaurant"
+        android:textSize="28sp"
+        android:textColor="#B2EBF4"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:background="@drawable/edittextheme"
+        android:id="@+id/res_title"
+        android:padding="5dp"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:hint="한마디"
+        android:textAlignment="center"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:background="@drawable/edittextheme"
+        android:padding="5dp"
+        android:id="@+id/res_restaurantname"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="음식점이름"
+        android:textAlignment="center"
+        android:layout_below="@id/res_title"
+        android:layout_alignStart="@+id/res_title" />
+
+    <RadioGroup
+        android:layout_marginTop="7dip"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/res_restaurantname"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식사"
+            android:textSize="15dip"
+            android:textColor="#FF007F"
+            />
+        <RadioButton
+            android:id="@+id/meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디저트"
+            android:textSize="15dip"
+            android:textColor="#FF007F"
+            android:layout_marginLeft="20dip"
+            />
+        <RadioButton
+            android:id="@+id/desert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카페"
+            android:textSize="15dip"
+            android:textColor="#FF007F"
+            android:layout_marginLeft="20dip"
+            />
+        <RadioButton
+            android:id="@+id/cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="260dip"
+        android:layout_height="165dip"
+        android:src="@drawable/cameraa"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/res_images" />
+
+
+
+
+    <Button
+
+
+        android:layout_margin="5dip"
+        android:id="@+id/enrollLocation"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button3"
+        android:layout_below="@+id/res_images"
+        android:text="장소등록"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:background="@drawable/edittextheme"
+        android:padding="5dp"
+        android:id="@+id/res_info"
+        android:layout_width="260dip"
+        android:layout_height="70dip"
+        android:hint="음식점 정보"
+        android:textAlignment="center"
+        android:layout_below="@+id/enrollLocation"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/res_inputbutton"
+        android:layout_width="128dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button3"
+        android:layout_below="@id/res_info"
+        android:text="입력"
+        android:layout_toEndOf="@+id/res_cancelbutton"
+        android:layout_marginStart="5dp"
+        />
+
+    <EditText
+        android:background="@drawable/edittextheme"
+        android:padding="5dp"
+        android:id="@+id/res_price"
+        android:hint="가격대"
+        android:layout_width="128dip"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/res_restaurantname"
+        android:layout_alignBottom="@+id/res_restaurantname"
+        android:layout_alignEnd="@+id/res_title"
+        android:inputType="number"
+        />
+
+    <Button
+
+        android:id="@+id/res_cancelbutton"
+        android:layout_width="128dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button3"
+        android:text="취소"
+        android:layout_alignBaseline="@+id/res_inputbutton"
+        android:layout_alignBottom="@+id/res_inputbutton"
+        android:layout_alignEnd="@+id/res_restaurantname" />
+
+
+</RelativeLayout>

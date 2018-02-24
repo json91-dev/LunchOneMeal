@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:gravity="center_horizontal"
+    android:paddingTop="70dip"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필 설정"
+        android:textSize="30dip"
+        android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="100px"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:id="@+id/myimage"
+        android:src="@drawable/profile"
+        />
+
+    <RelativeLayout
+        android:layout_width="220dip"
+        android:layout_height="250dip"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip"
+        android:padding="13dip"
+        >
+
+        <TextView
+            android:id="@+id/nicknameTag"
+            android:layout_marginTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:text="닉네임 : "
+            />
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_alignBaseline="@id/nicknameTag"
+            android:layout_toRightOf="@+id/nicknameTag"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sexTag"
+            android:layout_below="@id/nickname"
+            android:layout_alignRight="@id/nicknameTag"
+            android:layout_marginTop="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:text="성별 : "
+            />
+        <RadioGroup
+            android:id="@+id/sex"
+            android:layout_toRightOf="@id/sexTag"
+            android:layout_below="@id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="27dip"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"
+                />
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"
+                />
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ageTag"
+            android:layout_below="@id/sexTag"
+            android:layout_alignRight="@id/sexTag"
+            android:layout_marginTop="40dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:text="나이 : "
+            />
+        <Spinner
+            android:id="@+id/age"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_alignBaseline="@id/ageTag"
+            android:layout_toRightOf="@id/ageTag"
+            android:layout_below="@id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/age"
+            android:prompt="@string/prompt_age"
+            >
+        </Spinner>
+        <TextView
+            android:id="@+id/greetingTag"
+            android:layout_below="@id/ageTag"
+            android:layout_alignRight="@id/ageTag"
+            android:layout_marginTop="30dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인사말 : "
+            android:textSize="18dip"
+            />
+
+        <EditText
+            android:id="@+id/greeting"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/greetingTag"
+            android:layout_alignBaseline="@id/greetingTag"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:background="@drawable/edittextheme2"
+        />
+
+
+</LinearLayout>

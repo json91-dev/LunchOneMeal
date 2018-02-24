@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/mImage"
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:src="@drawable/ic_menu_gallery"
+        android:layout_marginTop="5dip"
+        />
+
+    <TextView
+
+        android:layout_alignLeft="@+id/nicknameTag"
+        android:id="@+id/mText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profile"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+
+    <TextView
+        android:id="@+id/nicknameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nickname : "
+        android:layout_below="@id/mText"
+        android:layout_toRightOf="@id/mImage"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="5dip"
+        />
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="슈퍼 루키"
+        android:layout_toRightOf="@id/nicknameTag"
+        android:layout_alignBaseline="@id/nicknameTag"
+        />
+
+    <TextView
+        android:id="@+id/sexTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nicknameTag"
+        android:text="sex : "
+        android:layout_below="@id/nicknameTag"
+        />
+    <TextView
+        android:id="@+id/sex"
+        android:text="男"
+        android:layout_alignBaseline="@id/sexTag"
+        android:layout_toRightOf="@id/sexTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/sexTag"
+        android:text="age : "
+        android:layout_below="@id/sexTag"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:text="23살"
+        android:layout_alignBaseline="@id/ageTag"
+        android:layout_toRightOf="@id/ageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/messageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/ageTag"
+        android:text="message : "
+        android:layout_below="@id/ageTag"
+        />
+
+    <TextView
+        android:id="@+id/message"
+        android:text="같이 밥먹어요 ㅎㅎ"
+        android:layout_alignBaseline="@id/messageTag"
+        android:layout_toRightOf="@id/messageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/friendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button4"
+        android:text="친구맺기"
+
+        />
+
+
+
+
+
+    <!--
+    <TextView
+        android:id="@+id/resinfo"
+        android:background="@drawable/edittexttheme3"
+        android:layout_width="180dip"
+        android:layout_height="52.5dip"
+        android:text="Date"
+        android:paddingLeft="2dip"
+        android:layout_below="@id/respriceTag"
+        android:layout_alignLeft="@id/mText"
+        />
+    -->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/resinfoTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info:"
+        android:layout_below="@+id/respriceTag"
+        android:layout_toStartOf="@+id/mDate" />
+
+
+</RelativeLayout>

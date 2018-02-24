@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장소검색"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dip"
+        />
+
+    <Spinner
+        android:layout_gravity="right"
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:entries="@array/distance"
+        android:layout_marginTop="3dip"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dip"
+        >
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="230dip"
+            android:layout_height="30dip"
+            android:background="@drawable/edittextheme2"
+            android:layout_marginTop="2.5dip"
+            />
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:text="Search"
+            />
+    </LinearLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mylinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

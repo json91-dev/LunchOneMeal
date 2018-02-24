@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dip"
+    >
+    <TextView
+        android:id="@+id/number"
+        android:textSize="18dip"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/number"
+        android:id="@+id/description"
+        android:layout_width="270dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:text="송파대로 방향으로 5m 이동 후 가든파이브 방향으로 10m 이동"
+        android:textColor="#000000"
+        android:textSize="15dip"
+        />
+
+
+</RelativeLayout>

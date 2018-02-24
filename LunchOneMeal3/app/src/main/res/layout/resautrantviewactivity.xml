@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:id="@+id/scrollview"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dip"
+        >
+        <ImageView
+            android:id="@+id/v_mainimage"
+            android:layout_width="match_parent"
+            android:layout_height="230dip"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="40dip"
+            android:layout_below="@id/v_mainimage"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="맛있어요"
+            android:id="@+id/v_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/kakao"
+            android:background="@drawable/kakaobutton"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_mainimage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="20dip"
+            android:text="카카오톡 공유"
+            android:textStyle="bold"
+            android:textSize="16dip"
+            />
+
+        <TextView
+            android:id="@+id/v_resname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_title"
+            android:layout_alignLeft="@id/v_title"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="김가네"
+            />
+        <TextView
+            android:id="@+id/v_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_resname"
+            android:layout_alignLeft="@id/v_resname"
+            android:text="20000원대"
+            />
+
+        <View
+            android:id="@+id/myview"
+            android:layout_margin="15dip"
+            android:layout_below="@id/v_price"
+            android:layout_width="300dip"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dip"
+            android:background="#EAEAEA"
+            />
+
+        <TextView
+            android:id="@+id/detailtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상세정보"
+            android:layout_below="@id/myview"
+            android:layout_alignLeft="@id/myview"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_marginTop="10dip"
+            android:layout_width="300dip"
+            android:layout_height="100dip"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailtag"
+            android:background="@drawable/edittextheme"
+            />
+
+        <View
+            android:id="@+id/myview2"
+            android:layout_margin="15dip"
+            android:layout_below="@id/detail"
+            android:layout_width="300dip"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dip"
+            android:background="#EAEAEA"
+            />
+
+        <TextView
+            android:id="@+id/v_mapviewTag"
+            android:layout_marginBottom="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도"
+            android:layout_below="@id/myview2"
+            android:layout_alignLeft="@id/myview2"
+            android:textColor="#000000"
+
+            />
+
+        <fragment
+            android:id="@+id/v_mapview"
+            android:layout_marginTop="10dip"
+            android:layout_width="300dip"
+            android:layout_height="200dip"
+            android:layout_below="@id/v_mapviewTag"
+            android:layout_alignLeft="@id/v_mapviewTag"
+            class="com.google.android.gms.maps.MapFragment"
+            >
+        </fragment>
+        <ImageView
+            android:id="@+id/trans_image"
+            android:layout_marginTop="10dip"
+            android:layout_width="300dip"
+            android:layout_height="200dip"
+            android:layout_below="@id/v_mapviewTag"
+            android:layout_alignLeft="@id/v_mapviewTag"
+            />
+
+        <View
+            android:id="@+id/myview3"
+            android:layout_margin="15dip"
+            android:layout_below="@id/v_mapview"
+            android:layout_width="300dip"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dip"
+            android:background="#EAEAEA"
+            />
+
+        <TextView
+            android:id="@+id/v_telnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처 및 링크"
+            android:layout_below="@id/myview3"
+            android:layout_alignLeft="@id/myview2"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_marginTop="15dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/telnumberTag"
+            android:text="Tel :"
+            android:layout_below="@id/v_telnumber"
+            android:layout_alignLeft="@id/v_telnumber"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/telephone"
+            android:layout_below="@id/v_telnumber"
+            android:layout_toRightOf="@id/telnumberTag"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="5dip"
+            android:text="010-6284-8051"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linkTag"
+            android:text="link :"
+            android:layout_below="@id/telnumberTag"
+            android:layout_alignLeft="@id/telnumberTag"
+            android:layout_marginTop="15dip"
+            />
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.naver.com"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_toRightOf="@id/linkTag"
+            android:layout_below="@id/telnumberTag"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="5dip"
+
+            />
+
+        <View
+            android:id="@+id/myview4"
+            android:layout_margin="15dip"
+            android:layout_below="@id/linkTag"
+            android:layout_width="300dip"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dip"
+            android:background="#EAEAEA"
+            />
+
+        <TextView
+            android:id="@+id/v_profileTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록자 프로필"
+            android:layout_below="@id/myview4"
+            android:layout_alignLeft="@id/myview2"
+            android:textColor="#000000"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_below="@id/v_profileTag"
+            android:layout_alignLeft="@id/v_profileTag"
+            android:id="@+id/mImage"
+            android:layout_width="85dip"
+            android:layout_height="85dip"
+            android:src="@drawable/ic_menu_gallery"
+            android:layout_marginTop="10dip"
+            />
+
+
+
+
+        <TextView
+            android:layout_below="@id/v_profileTag"
+            android:id="@+id/nicknameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickname : "
+            android:layout_toRightOf="@id/mImage"
+            android:layout_marginLeft="13dip"
+            android:layout_marginTop="10dip"
+            />
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록 안됨"
+            android:layout_toRightOf="@id/nicknameTag"
+            android:layout_alignBaseline="@id/nicknameTag"
+            />
+
+        <TextView
+            android:id="@+id/sexTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/nicknameTag"
+            android:text="sex : "
+            android:layout_below="@id/nicknameTag"
+            />
+        <TextView
+            android:id="@+id/sex"
+            android:text="등록 안됨"
+            android:layout_alignBaseline="@id/sexTag"
+            android:layout_toRightOf="@id/sexTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ageTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/sexTag"
+            android:text="age : "
+            android:layout_below="@id/sexTag"
+            />
+        <TextView
+            android:id="@+id/age"
+            android:text="등록 안됨"
+            android:layout_alignBaseline="@id/ageTag"
+            android:layout_toRightOf="@id/ageTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/greetingTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/ageTag"
+            android:text="greeting : "
+            android:layout_below="@id/ageTag"
+            />
+
+        <TextView
+            android:id="@+id/greeting"
+            android:text="등록 안됨"
+            android:layout_alignBaseline="@id/greetingTag"
+            android:layout_toRightOf="@id/greetingTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/friend_request_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구 요청"
+            android:layout_below="@id/mImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button3"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/mImage"
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:src="@drawable/ic_menu_gallery"
+        android:layout_marginTop="5dip"
+        />
+
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안잤더니 이제 졸려"
+        android:layout_below="@id/nickname"
+        android:layout_toRightOf="@id/mImage"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="10dip"
+        />
+
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="오전 10:11"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="15dip"
+
+
+        />
+
+
+
+
+
+    <!--
+    <TextView
+        android:id="@+id/resinfo"
+        android:background="@drawable/edittexttheme3"
+        android:layout_width="180dip"
+        android:layout_height="52.5dip"
+        android:text="Date"
+        android:paddingLeft="2dip"
+        android:layout_below="@id/respriceTag"
+        android:layout_alignLeft="@id/mText"
+        />
+    -->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/resinfoTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info:"
+        android:layout_below="@+id/respriceTag"
+        android:layout_toStartOf="@+id/mDate" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지희♥"
+        android:textSize="18dip"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignStart="@+id/message" />
+
+    <TextView
+        android:id="@+id/newmessage"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/date"
+        android:layout_alignRight="@id/date"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/kakaonewmessage"
+        android:textColor="#ffffff"
+        android:text="3"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

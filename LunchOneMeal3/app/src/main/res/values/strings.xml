@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LunchOneMeal</string>
+    <string name="title_section1">주변한끼</string>
+    <string name="title_section2">지도</string>
+    <string name="title_section3">친구</string>
+
+    <string name="prompt_age">나이를 선택하세요.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="str_done">완료</string>
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDE79QoiJ1f0y0tgsrI1aShBfUh198PpIs</string>
+
+    <string name="kakao_app_key">8bf8c67682c94a6f2fee5bc49c6f7fc1</string>
+    <string name="kakao_scheme">kakao8bf8c67682c94a6f2fee5bc49c6f7fc1</string>
+    <string name="kakaolink_host">kakaolink</string>
+
+    <string name="tmap_api_key">042a1189-21fc-36d0-8a0f-4c587be0ebd3</string>
+
+</resources>

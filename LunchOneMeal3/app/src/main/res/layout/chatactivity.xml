@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0DEED"
+    android:gravity="bottom"
+    >
+
+    <ListView
+
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="492dp"
+        android:paddingBottom="5dip"
+        android:dividerHeight="4px"
+        android:divider="#B0DEED"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:padding="10px"
+
+        >
+        <Button
+            android:text="사 진"
+            android:id="@+id/pictureButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="#F8E41C"
+            android:layout_weight="2"
+            />
+        <EditText
+            android:hint="메세지를 입력하세요"
+            android:id="@+id/editText1"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:layout_width="0px"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:text="전 송"
+            android:id="@+id/transButton"
+            android:background="#F8E41C"
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
