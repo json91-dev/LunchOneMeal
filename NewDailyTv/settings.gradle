@@ -1,7 +1,0 @@
-include ':app', ':library', ':sample-core'
-include ':openCVLibrary331'
-
-
-
-include 'sample-videochat-webrtc'
-include 'snippets'
